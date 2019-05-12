@@ -1,0 +1,26 @@
+name: migration
+recipe: drupal8
+
+config:
+  type: php:7.2
+  webroot: web
+  via: apache
+  ssl: false
+  xdebug: true
+  drush: ^9
+
+services:
+  appserver:
+    overrides:
+      environment:
+        PHP_IDE_CONFIG: "serverName=appserver"
+      volumes:
+        - ${HOME}/.lando/composer_cache:/var/www/.composer
+
+  database:
+    type: mysql:5.7
+    portforward: 3306
+  database_source:
+    type: mysql:5.7
+    portforward: 3307
+
