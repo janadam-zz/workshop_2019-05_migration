@@ -6,6 +6,7 @@ module:
   ckeditor: 0
   config: 0
   config_update: 0
+  config_update_ui: 0
   contextual: 0
   datetime: 0
   dblog: 0
@@ -26,6 +27,7 @@ module:
   text: 0
   toolbar: 0
   user: 0
+  ws_migration: 0
   minimal: 1000
 theme:
   stable: 0
