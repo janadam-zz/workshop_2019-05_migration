@@ -3,6 +3,8 @@
 /**
  * @file
  * Drupal site-specific configuration file.
+ *
+ * Copy this file to sites/all/settings.php.
  */
 
 $databases = [];
@@ -28,24 +30,24 @@ $settings['install_profile'] = 'minimal';
 
 // Drupal database.
 $databases['default']['default'] = [
-  'database'  => 'drupal8',
-  'username'  => 'drupal8',
-  'password'  => 'drupal8',
-  'prefix'    => '',
-  'host'      => 'database',
-  'port'      => '3306',
+  'database' => 'drupal8',
+  'username' => 'drupal8',
+  'password' => 'drupal8',
+  'prefix' => '',
+  'host' => 'database',
+  'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver'    => 'mysql',
+  'driver' => 'mysql',
 ];
 
 // Source database.
-$databases['source_db']['default'] = array (
-  'database'  => 'database',
-  'username'  => 'mysql',
-  'password'  => 'mysql',
-  'host'      => 'database_source',
-  'port'      => '3306',
+$databases['source_db']['default'] = [
+  'database' => 'database',
+  'username' => 'mysql',
+  'password' => 'mysql',
+  'host' => 'database_source',
+  'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver'    => 'mysql',
-);
+  'driver' => 'mysql',
+];
 

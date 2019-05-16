@@ -1,0 +1,16 @@
+# Migration configuration for degree terms - must be run before translations.
+# At first, we need to create nodes with EN variations.
+
+id: term_article_category
+label: Article category terms
+migration_group: content
+
+source:
+  plugin: source_term_article_category
+destination:
+  plugin: entity:taxonomy_term
+  default_bundle: article_category
+
+process:
+  # tid: is auto incremented.
+  name: category_name

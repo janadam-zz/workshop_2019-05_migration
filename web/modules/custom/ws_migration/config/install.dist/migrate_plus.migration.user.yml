@@ -1,0 +1,39 @@
+# User account migration
+
+id: user
+label: User account migration
+migration_group: users
+
+source:
+  plugin: source_user
+
+destination:
+  plugin: entity:user
+
+process:
+  name: username
+  mail: mail
+  init: mail
+  created: since
+
+#  roles:
+#    plugin: static_map
+#    source: permission
+#    bypass: true
+#    map:
+#      COLLECTOR: collector
+#      PHOTOGRAPHER: photographer
+#      EDITOR: editor
+#      PROOFREADER: corrector
+#      TRANSLATOR: translator
+#      COORDINATOR: coordinator
+#      ADMINISTRATOR: manager
+
+  # Copy field into another field.
+  changed: '@created'
+  access: '@created'
+  login: '@created'
+
+  status:
+    plugin: default_value
+    default_value: 1

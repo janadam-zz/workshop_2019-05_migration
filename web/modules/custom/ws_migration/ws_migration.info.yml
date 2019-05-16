@@ -1,0 +1,10 @@
+name: Pamet naroda data migration
+type: module
+description: 'Migrates data from source DB'
+package: Custom
+core: 8.x
+
+dependencies:
+  - drupal:migrate
+  - drupal:migrate_plus
+  - drupal:migrate_tools

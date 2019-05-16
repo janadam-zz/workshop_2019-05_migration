@@ -13,7 +13,8 @@ Drupal profil: https://www.drupal.org/u/martin_klima
 
 ## Co udělat před workshopem
 
-- Stáhout nebo naklonovat projekt z tohoto repozitáře
+- Stáhout nebo naklonovat projekt z tohoto repozitáře do pracovního adresáře
+- Být v tomto adresáři
 - Spustit vývojové prostředí
 
       lando start
@@ -42,4 +43,11 @@ Drupal profil: https://www.drupal.org/u/martin_klima
      případně použijte příkaz:
      
       lando info -s appserver
-     a tam jsou URL k projektu.
+     a tam najdete URL k projektu.
+     
+     
+## Co udělat dále, klidně až na workshopu
+
+- Naimportovat zdrojovou databázi pro migraci
+
+      lando db-import -h database_source _sql/source.sql    

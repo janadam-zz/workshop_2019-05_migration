@@ -1,0 +1,41 @@
+# Migration configuration for project content - must be run before translations.
+# At first, we need to create nodes with EN variations.
+
+id: ct_article
+label: Article
+migration_group: content
+
+source:
+  plugin: source_article
+destination:
+  plugin: entity:node
+process:
+  type:
+    plugin: default_value
+    default_value: article
+
+  title: title
+  body: body
+
+## Samples of migration into fields.
+#
+#  'field_description/value': source_db_column_name
+#  'field_description/format':
+#    plugin: default_value
+#    default_value: 'plain_text'
+#
+#  field_show_on_homepage: homepage
+
+
+  # Term reference - field_category will point to migrated taxonomy term.
+  field_category:
+    plugin: migration_lookup
+    # Use ID of the migration which migrated the terms.
+    migration: term_article_category
+    # Use referencing source DB column.
+    source: category_id
+
+# Category terms migration must be finished first.
+migration_dependencies:
+  required:
+    - term_article_category

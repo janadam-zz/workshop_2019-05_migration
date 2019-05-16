@@ -1,0 +1,16 @@
+# The machine name of the group, by which it is referenced in individual
+# migrations.
+id: content
+
+# A human-friendly label for the group.
+label: Content
+
+# More information about the group.
+description: Content related migrations.
+
+source_type: Custom tables
+
+# Key is a source DB key from settings.php, e.g.: $databases['source_db']['default'] = [...].
+shared_configuration:
+  source:
+    key: source_db

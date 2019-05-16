@@ -40,7 +40,7 @@ CREATE TABLE `article` (
 
 LOCK TABLES `article` WRITE;
 /*!40000 ALTER TABLE `article` DISABLE KEYS */;
-INSERT INTO `article` VALUES (1,'My first article','<p>Lorem ipsum...</p>','1',1),(2,'Test article 2','<p>Lorem ipsum 2...</p>','2',1),(3,'Test article 3','<p>Lorem ipsum 3...</p>','3',0);
+INSERT INTO `article` VALUES (1,'My first article','<p>Lorem ipsum...</p>','101',1),(2,'Test article 2','<p>Lorem ipsum 2...</p>','102',1),(3,'Test article 3','<p>Lorem ipsum 3...</p>','103',0);
 /*!40000 ALTER TABLE `article` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -105,4 +105,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-13  8:34:47
+-- Dump completed on 2019-05-16 10:18:09
