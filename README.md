@@ -7,7 +7,7 @@ Drupal profil: https://www.drupal.org/u/martin_klima
 
 
 ## Co je dobré mít, než začneme
-- Mít nainstalované Lando, pokud nemáte, zde jsou instrukce: https://docs.devwithlando.io/installation/system-requirements.html
+- Mít nainstalované nové Lando (alespoň v3.0.0-rc.15), pokud nemáte, zde jsou instrukce: https://docs.devwithlando.io/installation/system-requirements.html
 - Mít nějaký programátorský editor pro psaní kódu
 - Nějaký nástroj na práci s databázemi, např. MySQL Workbench https://www.mysql.com/products/workbench/
 
