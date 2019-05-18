@@ -18,6 +18,10 @@ Drupal profil: https://www.drupal.org/u/martin_klima
 - Spustit vývojové prostředí
 
       lando start
+      
+- Spustit drupal:scaffold príkaz
+
+      lando composer drupal:scaffold
 
 - Nainstalovat všechny potřebné soubory
 
